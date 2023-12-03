@@ -17,12 +17,12 @@
 <style>
   .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1.2fr 1.2fr 1fr 0.8fr;;
     gap: 16px;
-    padding: 10px;
+    padding: 1.5rem;
   }
   .column {
-    height: calc(100vh - var(--navbar-height) - 20px);
+    height: calc(100vh - var(--navbar-height) - 3rem);
     overflow-y: auto;
     padding-right: 0.4rem;
     /* border: 1px solid blue */

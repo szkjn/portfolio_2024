@@ -5,9 +5,10 @@
 
 <nav>
   <h1>jun suzuki</h1>
+  <h1>multimedia artist + data engineer</h1>
   <ul class="nav-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
+    <li><a href="/">where is home ?</a></li>
+    <li><a href="/about">talk 2 me</a></li>
   </ul>
 </nav>
 
@@ -16,14 +17,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     margin: 0;
-    background-color: #f5f5f5;
     height: var(--navbar-height);
   }
 
-  .logo {
-    font-size: 1rem;
+  h1, a {
+    font-size: 0.8rem;
   }
 
   .nav-links {
@@ -34,6 +34,10 @@
 
   .nav-links a {
     text-decoration: none;
-    color: black;
+    color: var(--dark-mode-color);
+  }
+
+  .nav-links a:hover {
+    text-decoration: underline;
   }
 </style>

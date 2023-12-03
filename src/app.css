@@ -1,10 +1,16 @@
 :root {
     --navbar-height: 30px;
+    --dark-mode-bg: #111;
+    --dark-mode-color: #ddd;
+    --dark-mode-scrollbar-track: #181818;
+    --dark-mode-scrollbar-thumb: #333;
 }
 
 * {
     box-sizing: border-box;
     font-family:'Hedvig Letters Sans', sans-serif;
+    background: var(--dark-mode-bg);
+    color: var(--dark-mode-color)
 }
 
 body {
@@ -30,8 +36,9 @@ p {
     top: 0; 
     z-index: 10;
     padding-bottom: 0.3rem;
-    background: #fff
-    /* border: 1px solid rgb(1, 3, 1); */
+    /* background: #fff */
+    border-bottom: 1px var(--dark-mode-color) solid;
+    font-size: 0.75rem;
 }
 
 .elTitle {
@@ -50,11 +57,13 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent; /* Background of the scrollbar track */
+    background: var(--dark-mode-scrollbar-track); /* Background of the scrollbar track */
+    /* background: transparent; Background of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
+    /* background-color: rgba(0, 0, 0, 0.2); Color of the scrollbar thumb */
+    background-color: var(--dark-mode-scrollbar-thumb); /* Color of the scrollbar thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -64,5 +73,6 @@ p {
 /* SCROLLBAR : Universal styles (limited support in non-webkit browsers) */
 * {
     scrollbar-width: thin; /* 'auto' or 'thin' */
-    scrollbar-color: rgba(1, 0, 0, 0.2) transparent; /* thumb and track color */
+    scrollbar-color: rgba(1, 0, 0, 0.5); /* thumb and track color */
+    /* scrollbar-color: rgba(1, 0, 0, 0.2) transparent; thumb and track color */
 }

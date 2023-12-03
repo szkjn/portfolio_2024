@@ -6,7 +6,7 @@
 </script>
 
 <div>
-  <h2 class="colTitle">Music</h2>
+  <h2 class="colTitle">Releases</h2>
   {#each elements as element}
     <div>
       <p class="elTitle">{element.title}</p>
