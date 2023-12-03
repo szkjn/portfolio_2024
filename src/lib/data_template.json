@@ -1,0 +1,42 @@
+{
+    "exhibitions": [
+        {
+            "title": "title 1",
+            "description": "description 1",
+            "location": "location 1",
+            "date": "01.01.2001",
+            "main_img": "",
+            "path_to_images": ""
+        }
+    ],
+    "performances": [
+        {
+            "title": "title 2",
+            "description": "description 2",
+            "location": "location 2",
+            "date": "01.01.2001",
+            "main_img": "",
+            "path_to_images": ""
+        }
+    ],
+    "music": [
+        {
+            "title": "title 3",
+            "description": "description 3",
+            "location": "location 3",
+            "date": "01.01.2001",
+            "main_img": "",
+            "path_to_images": ""
+        }
+    ],
+    "programming": [
+        {
+            "title": "title 4",
+            "description": "description 4",
+            "location": "location 4",
+            "date": "01.01.2001",
+            "main_img": "",
+            "path_to_images": ""
+        }
+    ]
+}
