@@ -21,9 +21,9 @@
 
 <div class="container">
   <div class="column"><Exhibitions {openModal} /></div>
-  <div class="column"><Performances /></div>
-  <div class="column"><Music /></div>
-  <div class="column"><Programming /></div>
+  <div class="column"><Performances {openModal} /></div>
+  <div class="column"><Music {openModal} /></div>
+  <div class="column"><Programming {openModal} /></div>
 </div>
 
 <Modal show={showModal} element={selectedElement} onClose={closeModal} />
