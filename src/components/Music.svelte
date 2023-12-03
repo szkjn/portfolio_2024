@@ -9,11 +9,18 @@
   <h2 class="colTitle">Music</h2>
   {#each elements as element}
     <div>
-      <h3>{element.title}</h3>
+      <p class="elTitle">{element.title}</p>
+      <p>{element.location} - {element.date}</p>
+      {#if element.main_img}
+        <img class="elThumbnail" src={element.main_img} alt={element.title} />
+      {/if}
       <p>{element.description}</p>
-      <p>{element.location}</p>
-      <p>{element.date}</p>
-      <!-- <img src={element.image} alt={element.title} /> -->
     </div>
   {/each}
 </div>
+
+<style>
+  img {
+    width: 66%;
+  }
+</style>
