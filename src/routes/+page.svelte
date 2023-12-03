@@ -1,6 +1,5 @@
 <!-- src/routes/+page.svelte -->
 <script lang="ts">
-  import Navbar from "../components/Navbar.svelte";
   import Exhibitions from "../components/Exhibitions.svelte";
   import Performances from "../components/Performances.svelte";
   import Music from "../components/Music.svelte";
@@ -17,7 +16,7 @@
 <style>
   .container {
     display: grid;
-    grid-template-columns: 1.2fr 1.2fr 1fr 0.8fr;;
+    grid-template-columns: 1.4fr 1.2fr 1fr 0.8fr;;
     gap: 16px;
     padding: 1.5rem;
   }

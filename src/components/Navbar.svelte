@@ -4,7 +4,7 @@
 </script>
 
 <nav>
-  <h1>jun suzuki</h1>
+  <h1>j u n<span>s u z u k i</span></h1>
   <h1>multimedia artist + data engineer</h1>
   <ul class="nav-links">
     <li><a href="/">where is home ?</a></li>
@@ -13,6 +13,9 @@
 </nav>
 
 <style>
+  span {
+    padding-left: 1rem;
+  }
   nav {
     display: flex;
     justify-content: space-between;
@@ -22,7 +25,8 @@
     height: var(--navbar-height);
   }
 
-  h1, a {
+  h1,
+  a {
     font-size: 0.8rem;
   }
 
@@ -30,14 +34,5 @@
     list-style: none;
     display: flex;
     gap: 1rem;
-  }
-
-  .nav-links a {
-    text-decoration: none;
-    color: var(--dark-mode-color);
-  }
-
-  .nav-links a:hover {
-    text-decoration: underline;
   }
 </style>

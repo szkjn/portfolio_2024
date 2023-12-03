@@ -6,15 +6,28 @@
 </script>
 
 <div>
-  <h2 class="colTitle">Releases</h2>
+  <h2 class="col-title">r e l e a s e s</h2>
   {#each elements as element}
-    <div>
-      <p class="elTitle">{element.title}</p>
-      <p>{element.location} - {element.date}</p>
-      {#if element.main_img}
-        <img class="elThumbnail" src={element.main_img} alt={element.title} />
-      {/if}
-      <p>{element.description}</p>
+    <div class="el">
+      <div class="el-top">
+        <div class="el-top-left">
+          <p class="el-top-left-header">
+            <span class="el-date">{element.date}</span>
+            {element.location}
+          </p>
+          <p class="el-title">{element.title}</p>
+        </div>
+        <!-- {#if element.main_img}
+        <img
+          class="el-img-thumb"
+          src={element.main_img}
+          alt={element.title}
+        />
+      {/if} -->
+      </div>
+      <div class="el-btm">
+        <p>{element.short_desc}</p>
+      </div>
     </div>
   {/each}
 </div>
