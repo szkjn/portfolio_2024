@@ -21,35 +21,10 @@
     selectedEl = null;
   }
 
-  function setFocus(col: string, el: string): void {
-    isFocusMode = true;
-    focusedCol = col;
-    selectedEl = el;
-  }
-
-  $: transformA =
-    isFocusMode && focusedCol !== "A" ? "translateX(-130%)" : "translateX(0)";
-  $: transformB = isFocusMode
-    ? focusedCol === "A"
-      ? "translateX(330%)"
-      : focusedCol === "B"
-        ? "translateX(-100%)"
-        : "translateX(-230%)"
-    : "translateX(0)";
-  $: transformC = isFocusMode
-    ? focusedCol === "A"
-      ? "translateX(230%)"
-      : focusedCol === "B"
-        ? "translateX(230%)"
-        : focusedCol === "C"
-          ? "translateX(-230%)"
-          : "translateX(-400%)"
-    : "translateX(0)";
-  $: transformD = isFocusMode
-    ? focusedCol === "A" || focusedCol === "B" || focusedCol === "C"
-      ? "translateX(130%)"
-      : "translateX(-420%)"
-    : "translateX(0)";
+  $: transformA = isFocusMode ? "translateX(400%)" : "translateX(0)";
+  $: transformB = isFocusMode ? "translateX(400%)" : "translateX(0)";
+  $: transformC = isFocusMode ? "translateX(400%)" : "translateX(0)";
+  $: transformD = isFocusMode ? "translateX(400%)" : "translateX(0)";
 
   // Reactive debug logs
   $: if (isFocusMode) {
@@ -84,7 +59,9 @@
           <span class="el-title">{selectedEl.title}</span>
         </p>
         <p>{selectedEl.long_desc}</p>
-        <img src={selectedEl.main_img} alt={selectedEl.title} />
+        {#each selectedEl.images as path}
+          <img src={path} alt={selectedEl.title} />
+        {/each}
       </div>
     </div>
   {/if}
@@ -94,19 +71,20 @@
   .container {
     display: grid;
     grid-template-columns: 1.3fr 1.1fr 0.9fr 0.7fr;
-    margin: 1.5rem;
+    margin: 1.5rem .5rem;
     height: calc(100vh - var(--navbar-height) - 3rem);
     overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
-    gap: 14px;
+    /* gap: 14px; */
     /* border: 1px dashed greenyellow; */
+    /* background: var(--dark-mode-bg); */
   }
   .column {
     height: calc(100vh - var(--navbar-height) - 3rem);
     overflow-y: auto;
-    padding-right: 0.4rem;
-    transition: transform 1s ease;
+    padding: 0 1rem;
+    transition: transform .5s ease-in-out;
     z-index: 1;
     /* border: 1px dashed greenyellow; */
   }
@@ -114,10 +92,9 @@
   .focus-window {
     position: absolute;
     top: 0;
-    left: 24rem;
-    /* padding-right: 0.4rem; */
+    left: 0;
     height: 100%;
-    width: 62vw;
+    width: 100%;
     z-index: 0;
     display: flex;
     flex-direction: column;
@@ -131,8 +108,9 @@
 
   img {
     max-width: 50vw;
-    max-height: 80vh;
+    max-height: 60vh;
   }
+ 
   .go-back-header {
     margin-bottom: 1rem;
     border: 1px var(--dark-mode-bg) solid;

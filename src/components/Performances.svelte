@@ -17,16 +17,17 @@
           </p>
           <p class="el-title">{element.title}</p>
         </div>
-        <!-- {#if element.main_img}
+        <div class="el-btm">
+          <p>{element.short_desc}</p>
+        </div>
+        {#if element.main_img}
           <img
             class="el-img-thumb"
             src={element.main_img}
             alt={element.title}
+            style="width: 75%"
           />
-        {/if} -->
-      </div>
-      <div class="el-btm">
-        <p>{element.short_desc}</p>
+        {/if}
       </div>
     </button>
   {/each}

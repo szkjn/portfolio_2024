@@ -17,13 +17,14 @@
           </p>
           <p class="el-title">{element.title}</p>
         </div>
-        <!-- {#if element.main_img}
+        {#if element.main_img}
           <img
             class="el-img-thumb"
             src={element.main_img}
             alt={element.title}
+            style="width: 75%"
           />
-        {/if} -->
+        {/if}
       </div>
       <div class="el-btm">
         <p>{element.short_desc}</p>

@@ -66,7 +66,8 @@ a:hover, button:hover {
 
 .el {
     margin: 0;
-    padding: 0 0 20px 0;
+    margin-bottom: 20px;
+    padding: 0;
     /* transition: background-color 0.1s, border 0.1s; */
     border: 1px solid var(--dark-mode-bg);
 }
@@ -81,10 +82,10 @@ a:hover, button:hover {
     background-color: transparent;
 }
 
-/* .el-top {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-} */
+.el-top {
+    margin: 0;
+    padding: 0;
+}
 
 .el-top-left {
     display: flex;
