@@ -4,7 +4,7 @@
 </script>
 
 <nav>
-  <h1>j u n<span>s u z u k i</span></h1>
+  <h1 class="logo">j u n<span class="logo">s u z u k i</span></h1>
   <h1>multimedia artist + data engineer</h1>
   <ul class="nav-links">
     <li><a href="/">where is home ?</a></li>
@@ -29,6 +29,10 @@
   a {
     font-size: 0.8rem;
   }
+/* 
+  .logo {
+    animation: blinkText .2s infinite;
+  } */
 
   .nav-links {
     list-style: none;

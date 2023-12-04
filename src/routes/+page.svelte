@@ -4,41 +4,121 @@
   import Performances from "../components/Performances.svelte";
   import Music from "../components/Music.svelte";
   import Programming from "../components/Programming.svelte";
-  import Modal from "../components/Modal.svelte";
 
-  let showModal = false;
-  let selectedElement: any = null;
+  let isFocusMode: boolean = false;
+  let focusedCol: any = null;
+  let selectedEl: any = null;
 
-  function openModal(element: any) {
-    selectedElement = element;
-    showModal = true;
+  function selectEl(col: string, el: string): void {
+    isFocusMode = true;
+    focusedCol = col;
+    selectedEl = el;
   }
 
-  function closeModal() {
-    showModal = false;
+  function clearFocus(): void {
+    isFocusMode = false;
+    focusedCol = null;
+    selectedEl = null;
+  }
+
+  $: transformA = isFocusMode ? "translateX(400%)" : "translateX(0)";
+  $: transformB = isFocusMode ? "translateX(400%)" : "translateX(0)";
+  $: transformC = isFocusMode ? "translateX(400%)" : "translateX(0)";
+  $: transformD = isFocusMode ? "translateX(400%)" : "translateX(0)";
+
+  // Reactive debug logs
+  $: if (isFocusMode) {
+    console.log("isFocusMode", isFocusMode);
+    console.log("Focused Column:", focusedCol);
   }
 </script>
 
-<div class="container">
-  <div class="column"><Exhibitions {openModal} /></div>
-  <div class="column"><Performances {openModal} /></div>
-  <div class="column"><Music {openModal} /></div>
-  <div class="column"><Programming {openModal} /></div>
-</div>
+<div class={`container ${isFocusMode ? "focus-mode" : ""}`}>
+  <div class="column" style="transform: {transformA}">
+    <Exhibitions {selectEl} />
+  </div>
+  <div class="column" style="transform: {transformB}">
+    <Performances {selectEl} />
+  </div>
+  <div class="column" style="transform: {transformC}">
+    <Music {selectEl} />
+  </div>
+  <div class="column" style="transform: {transformD}">
+    <Programming {selectEl} />
+  </div>
 
-<Modal show={showModal} element={selectedElement} onClose={closeModal} />
+  {#if isFocusMode}
+    <div class="focus-window">
+      <div class="go-back-header">
+        <button on:click={clearFocus} class="go-back-button">back</button>
+      </div>
+      <div class="full-content">
+        <p class="focus-header">
+          <span class="el-date">{selectedEl.date}</span>
+          <span class="el-loc">{selectedEl.location}</span>
+          <span class="el-title">{selectedEl.title}</span>
+        </p>
+        <p>{selectedEl.long_desc}</p>
+        {#each selectedEl.images as path}
+          <img src={path} alt={selectedEl.title} />
+        {/each}
+      </div>
+    </div>
+  {/if}
+</div>
 
 <style>
   .container {
     display: grid;
-    grid-template-columns: 1.4fr 1.2fr 1fr 0.8fr;
-    gap: 16px;
-    padding: 1.5rem;
+    grid-template-columns: 1.3fr 1.1fr 0.9fr 0.7fr;
+    margin: 1.5rem .5rem;
+    height: calc(100vh - var(--navbar-height) - 3rem);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    /* gap: 14px; */
+    /* border: 1px dashed greenyellow; */
+    /* background: var(--dark-mode-bg); */
   }
   .column {
     height: calc(100vh - var(--navbar-height) - 3rem);
     overflow-y: auto;
-    padding-right: 0.4rem;
-    /* border: 1px solid blue */
+    padding: 0 1rem;
+    transition: transform .5s ease-in-out;
+    z-index: 1;
+    /* border: 1px dashed greenyellow; */
+  }
+
+  .focus-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+  }
+
+  .full-content {
+    overflow-y: scroll;
+    /* background: greenyellow; */
+  }
+
+  img {
+    max-width: 50vw;
+    max-height: 60vh;
+  }
+ 
+  .go-back-header {
+    margin-bottom: 1rem;
+    border: 1px var(--dark-mode-bg) solid;
+    font-size: 0.75rem;
+  }
+  .go-back-button {
+    padding: 0;
+    margin: 0;
   }
 </style>
