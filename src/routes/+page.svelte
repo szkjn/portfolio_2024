@@ -95,6 +95,7 @@
     left: 0;
     height: 100%;
     width: 100%;
+    padding: 0 1rem;
     z-index: 0;
     display: flex;
     flex-direction: column;

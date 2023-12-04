@@ -6,12 +6,12 @@
   import Programming from "./components/Programming.svelte";
 </script>
 
-<div class="container">
+<!-- <div class="container">
   <Exhibitions />
   <Performances />
   <Music />
   <Programming />
-</div>
+</div> -->
 
 <style>
   /* .container {
