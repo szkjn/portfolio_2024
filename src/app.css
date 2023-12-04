@@ -40,14 +40,18 @@ a {
 }
 
 button {
-    text-align: start;
+    text-align: start;   
+    border: none;
+    cursor: pointer;
+    background: none;
 }
 
-a:hover {
+a:hover, button:hover {
     border: 1px solid var(--dark-mode-color);
     animation: reveal 0.2s infinite;
     cursor: pointer;
 }
+
 
 .col-title {
     /* text-transform: uppercase; */
@@ -158,6 +162,15 @@ SCROLLBAR
 KEYFRAMES
 */
 
+@keyframes blinkText {
+    0% {color: var(--dark-mode-color)}
+    20% {color: var(--dark-mode-bg)} 
+    40% {color: var(--dark-mode-color)} 
+    60% {color: var(--dark-mode-bg)} 
+    80% {color: var(--dark-mode-color)} 
+    100% {color: var(--dark-mode-bg)}
+}
+
 @keyframes reveal {
     0% {border: 1px solid #aaa}
     20% {border: 1px solid var(--dark-mode-bg)} 
@@ -166,3 +179,15 @@ KEYFRAMES
     80% {border: 1px solid #aaa} 
     100% {border: 1px solid var(--dark-mode-bg)}
 }
+
+@keyframes slowblink {
+    0% {border-left: 1px solid var(--dark-mode-bg)}
+    50% {border-left: 1px solid #888} 
+    100% {border-left: 1px solid var(--dark-mode-bg)}
+}
+
+/* @keyframes slowblink {
+    0% {border: 1px solid var(--dark-mode-bg)}
+    50% {border: 1px solid #888} 
+    100% {border: 1px solid var(--dark-mode-bg)}
+} */

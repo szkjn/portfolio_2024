@@ -1,15 +1,14 @@
 <!-- src/components/Programming.svelte -->
 <script lang="ts">
   import data from "$lib/private_data.json";
-  export let openModal: (element: any) => void;
-
+  export let selectEl: any;
   const elements = data.programming;
 </script>
 
 <div>
   <h2 class="col-title">p r o g r a m m i n g</h2>
   {#each elements as element}
-    <button class="el" on:click={() => openModal(element)}>
+    <button class="el" on:click={() => selectEl("D", element)}>
       <div class="el-top">
         <div class="el-top-left">
           <p class="el-top-left-header">

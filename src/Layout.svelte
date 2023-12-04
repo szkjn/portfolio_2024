@@ -14,9 +14,9 @@
 </div>
 
 <style>
-  .container {
+  /* .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
-  }
+  } */
 </style>
