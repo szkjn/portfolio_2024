@@ -33,7 +33,7 @@
     ? focusedCol === "A"
       ? "translateX(330%)"
       : focusedCol === "B"
-        ? "translateX(-107%)"
+        ? "translateX(-100%)"
         : "translateX(-230%)"
     : "translateX(0)";
   $: transformC = isFocusMode
@@ -42,13 +42,13 @@
       : focusedCol === "B"
         ? "translateX(230%)"
         : focusedCol === "C"
-          ? "translateX(-214%)"
-          : "translateX(-330%)"
+          ? "translateX(-230%)"
+          : "translateX(-400%)"
     : "translateX(0)";
   $: transformD = isFocusMode
     ? focusedCol === "A" || focusedCol === "B" || focusedCol === "C"
       ? "translateX(130%)"
-      : "translateX(-320%)"
+      : "translateX(-420%)"
     : "translateX(0)";
 
   // Reactive debug logs
@@ -74,13 +74,17 @@
 
   {#if isFocusMode}
     <div class="focus-window">
+      <div class="go-back-header">
+        <button on:click={clearFocus} class="go-back-button">back</button>
+      </div>
       <div class="full-content">
-        <h2>{selectedEl.title}</h2>
+        <p class="focus-header">
+          <span class="el-date">{selectedEl.date}</span>
+          <span class="el-loc">{selectedEl.location}</span>
+          <span class="el-title">{selectedEl.title}</span>
+        </p>
         <p>{selectedEl.long_desc}</p>
         <img src={selectedEl.main_img} alt={selectedEl.title} />
-      </div>
-      <div class="go-back-column">
-        <button on:click={clearFocus} class="go-back-button"> &lt;</button>
       </div>
     </div>
   {/if}
@@ -89,7 +93,7 @@
 <style>
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.3fr 1.1fr 0.9fr 0.7fr;
     margin: 1.5rem;
     height: calc(100vh - var(--navbar-height) - 3rem);
     overflow-y: hidden;
@@ -104,27 +108,19 @@
     padding-right: 0.4rem;
     transition: transform 1s ease;
     z-index: 1;
-  }
-
-  .col {
-    padding: 1rem;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    transition: transform 1s ease;
-    z-index: 1;
+    /* border: 1px dashed greenyellow; */
   }
 
   .focus-window {
     position: absolute;
     top: 0;
-    left: 20rem;
+    left: 24rem;
+    /* padding-right: 0.4rem; */
     height: 100%;
-    width: 66vw;
+    width: 62vw;
     z-index: 0;
-    display: grid;
-    grid-template-columns: 8fr 1fr;
+    display: flex;
+    flex-direction: column;
     /* border: 1px solid red; */
   }
 
@@ -133,30 +129,17 @@
     /* background: greenyellow; */
   }
 
-  .el {
-    background: blue;
-  }
-
   img {
     max-width: 50vw;
     max-height: 80vh;
   }
-  .go-back-column {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-    overflow-y: hidden;
+  .go-back-header {
+    margin-bottom: 1rem;
+    border: 1px var(--dark-mode-bg) solid;
+    font-size: 0.75rem;
   }
   .go-back-button {
-    height: 100%;
-    border-left: 1px solid var(--dark-mode-bg-hover);
-    font-size: 1.5rem;
-    animation: slowblink 2s infinite ease-in-out;
-  }
-  .go-back-button:hover {
-    border-left: 1px solid var(--dark-mode-color);
-    animation: reveal 0.2s infinite;
-    cursor: pointer;
+    padding: 0;
+    margin: 0;
   }
 </style>

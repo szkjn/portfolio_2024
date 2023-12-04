@@ -41,7 +41,7 @@ a {
 
 button {
     text-align: start;   
-    border: none;
+    border: 1px solid var(--dark-mode-bg);
     cursor: pointer;
     background: none;
 }
@@ -60,7 +60,6 @@ a:hover, button:hover {
     z-index: 10;
     padding-bottom: 0.3rem;
     margin-bottom: 1rem;
-    /* background: #fff */
     border-bottom: 1px var(--dark-mode-color) solid;
     font-size: 0.75rem;
 }
@@ -124,6 +123,10 @@ a:hover, button:hover {
     /* text-transform: uppercase; */
 }
 
+.el-loc {
+    padding: 0 2px;
+}
+
 .el-img-thumb {
     width: 100%;
     filter: grayscale(100%);
@@ -169,6 +172,15 @@ KEYFRAMES
     60% {color: var(--dark-mode-bg)} 
     80% {color: var(--dark-mode-color)} 
     100% {color: var(--dark-mode-bg)}
+}
+
+@keyframes blinkBtmBorder {
+    0% {border-bottom: 1px solid var(--dark-mode-color)}
+    20% {border-bottom: 1px solid var(--dark-mode-bg)} 
+    40% {border-bottom: 1px solid var(--dark-mode-color)} 
+    60% {border-bottom: 1px solid var(--dark-mode-bg)} 
+    80% {border-bottom: 1px solid var(--dark-mode-color)} 
+    100% {border-bottom: 1px solid var(--dark-mode-bg)}
 }
 
 @keyframes reveal {
