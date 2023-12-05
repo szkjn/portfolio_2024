@@ -26,7 +26,7 @@
         {/if} -->
       </div>
       <div class="el-btm">
-        <p>{element.short_desc}</p>
+        <p>{element.shortDesc}</p>
       </div>
     </button>
   {/each}

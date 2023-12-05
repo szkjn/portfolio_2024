@@ -2,7 +2,7 @@
 <script lang="ts">
   import data from "$lib/private_data.json";
   export let selectEl: any;
-  const elements = data.music;
+  const elements = data.releases;
 </script>
 
 <div>
@@ -17,17 +17,17 @@
           </p>
           <p class="el-title">{element.title}</p>
         </div>
-        {#if element.main_img}
+        {#if element.coverImg}
           <img
             class="el-img-thumb"
-            src={element.main_img}
+            src={element.coverImg}
             alt={element.title}
             style="width: 75%"
           />
         {/if}
       </div>
       <div class="el-btm">
-        <p>{element.short_desc}</p>
+        <p>{element.shortDesc}</p>
       </div>
     </button>
   {/each}

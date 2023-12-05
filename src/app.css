@@ -1,3 +1,7 @@
+/*
+    GENERAL
+*/
+
 :root {
     --navbar-height: 30px;
     --dark-mode-bg: #111;
@@ -52,6 +56,9 @@ a:hover, button:hover {
     cursor: pointer;
 }
 
+/*
+    CLASSES
+*/
 
 .col-title {
     /* text-transform: uppercase; */
@@ -120,7 +127,7 @@ a:hover, button:hover {
     /* font-style: italic; */
     /* font-family: Calibri, sans-serif; */
     /* font-size: 0.95rem; */
-    font-weight: 600;
+    /* font-weight: 600; */
     /* text-transform: uppercase; */
 }
 
@@ -134,7 +141,7 @@ a:hover, button:hover {
 }
 
 /*
-SCROLLBAR
+    SCROLLBAR
 */
 
 /* Webkit browsers */
@@ -162,8 +169,8 @@ SCROLLBAR
 }
 
 
-/*
-KEYFRAMES
+/*  
+    KEYFRAMES
 */
 
 @keyframes blinkText {
