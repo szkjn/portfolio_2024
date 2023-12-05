@@ -4,10 +4,10 @@
   export let item: Exhibition;
 
   const images: string[] = [
-    "/images/i_used_to/05.jpg",
-    "/images/i_used_to/03.jpg",
-    "/images/i_used_to/04.jpg",
-    "/images/i_used_to/02.jpg",
+    "/images/i_used_to_2023/05.jpg",
+    "/images/i_used_to_2023/03.jpg",
+    "/images/i_used_to_2023/04.jpg",
+    "/images/i_used_to_2023/02.jpg",
   ];
 </script>
 
@@ -16,7 +16,7 @@
     <span class="el-date">{item.date}</span>
     <span class="el-loc">{item.location}</span>
   </p>
-  <h1 class="el-title focus">{item.title}</h1>
+  <h1 class="el-title focus">{item.title}</h1><br>
   <p class="short-desc">{item.shortDesc}</p>
   <div class="image-text-container">
     <div class="long-desc">

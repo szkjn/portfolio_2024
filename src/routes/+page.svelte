@@ -3,6 +3,9 @@
   import Exhibitions from "../components/Exhibitions.svelte";
   import Exhibition01 from "./exhibitions/01.svelte";
   import Exhibition02 from "./exhibitions/02.svelte";
+  import Exhibition03 from "./exhibitions/03.svelte";
+  import Exhibition04 from "./exhibitions/04.svelte";
+  import Exhibition05 from "./exhibitions/05.svelte";
   import Performances from "../components/Performances.svelte";
   import Music from "../components/Music.svelte";
   import Programming from "../components/Programming.svelte";
@@ -34,6 +37,9 @@
   const exhibitionComponents: any = {
     "1": Exhibition01,
     "2": Exhibition02,
+    "3": Exhibition03,
+    "4": Exhibition04,
+    "5": Exhibition05,
   };
 
   let DetailComponent: any;

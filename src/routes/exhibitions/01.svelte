@@ -1,12 +1,11 @@
 <script lang="ts">
   import type { Exhibition } from "$lib/types";
-
+  import "./exhibitions.css";
   export let item: Exhibition;
 
   const images: string[] = [
     "/images/birds_chirping/02.jpg",
     "/images/birds_chirping/03.jpg",
-    "/images/birds_chirping/04.jpg",
   ];
 </script>
 
@@ -54,57 +53,4 @@
 </main>
 
 <style>
-  .focus {
-    font-size: 2rem;
-    width: auto;
-  }
-  .short-desc {
-    color: var(--dark-mode-color);
-    opacity: 0.9;
-    background-color: var(--dark-mode-bg);
-    padding: 0.25rem 0;
-    margin: 0;
-    display: inline-block;
-  }
-  .image-text-container {
-    position: relative;
-  }
-
-  .cover-img {
-    padding-top: 10rem;
-    width: 100%;
-    max-width: 1280px;
-    height: auto;
-  }
-
-  .long-desc {
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: white;
-    padding: 2rem 0 0 2rem;
-    text-align: justify;
-    width: 33%;
-    min-width: 200px;
-    max-width: 300px;
-    background: transparent;
-    /* color: greenyellow; */
-  }
-
-  .long-desc > p {
-    background: transparent;
-  }
-  .cover-img {
-    width: 100%;
-  }
-  .gallery {
-    display: flex;
-    flex-direction: column;
-  }
-  .gallery-image {
-    max-width: 50%;
-    /* height: auto; */
-  }
 </style>
