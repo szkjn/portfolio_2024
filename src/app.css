@@ -21,7 +21,10 @@
 
 body {
     /* border: 1px solid red; */
-    margin: 0;
+    max-width: 1280px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1, h2, h3 {
@@ -56,6 +59,8 @@ a:hover, button:hover {
     cursor: pointer;
 }
 
+
+
 /*
     CLASSES
 */
@@ -69,6 +74,7 @@ a:hover, button:hover {
     margin-bottom: 1rem;
     border-bottom: 1px var(--dark-mode-color) solid;
     font-size: 0.75rem;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .el {
@@ -77,6 +83,7 @@ a:hover, button:hover {
     padding: 0;
     /* transition: background-color 0.1s, border 0.1s; */
     border: 1px solid var(--dark-mode-bg);
+    width: 100%;
 }
 
 .el:hover {
@@ -112,30 +119,33 @@ a:hover, button:hover {
     padding: 0 4px;
 }
 
-.el-date-modal {
-    border: 0;
-    border-right: 1px solid var(--dark-mode-color);
-}
-
 .el-title {
-    background-color: var(--dark-mode-color);
+    /* background-color: var(--dark-mode-color); */
     /* border: 1px solid greenyellow; */
     opacity: 1;
-    color: var(--dark-mode-bg);
-    padding: 0 .25rem;
+    color: var(--dark-mode-color);
+    padding: 0;
     margin: 0.25rem 0;
     display: inline-block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1;
+    overflow-wrap: break-word;
     /* font-family: Calibri, sans-serif; */
     /* font-weight: 500; */
 }
 
 .el-loc {
-    padding: 0 2px;
+    background-color: var(--dark-mode-color);
+    color: var(--dark-mode-bg);
+    padding: 0 4px;
+    font-weight: 600;
 }
 
 .el-img-thumb {
     width: 100%;
     padding-top: 0.25rem;
+    
     /* filter: grayscale(100%); */
 }
 

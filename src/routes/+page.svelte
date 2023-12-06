@@ -142,9 +142,6 @@
 </div>
 
 <style>
-  img {
-    max-width: 500px;
-  }
   .container {
     display: grid;
     grid-template-columns: 1.3fr 1.1fr 0.9fr 0.7fr;

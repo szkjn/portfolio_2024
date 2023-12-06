@@ -25,9 +25,9 @@
           />
         {/if} -->
       </div>
-      <div class="el-btm">
+      <!-- <div class="el-btm">
         <p>{element.shortDesc}</p>
-      </div>
+      </div> -->
     </button>
   {/each}
 </div>

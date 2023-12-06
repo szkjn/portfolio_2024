@@ -7,8 +7,7 @@
   <h1 class="logo">j u n<span class="logo">s u z u k i</span></h1>
   <h1>multimedia artist + data engineer</h1>
   <ul class="nav-links">
-    <li><a href="/">where is home ?</a></li>
-    <li><a href="/about">talk 2 me</a></li>
+    <li><a href="/about">t a l k 2 m e : : )</a></li>
   </ul>
 </nav>
 

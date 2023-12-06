@@ -13,22 +13,28 @@
         <div class="el-top-left">
           <p class="el-top-left-header">
             <span class="el-date">{element.date}</span>
-            {element.location}
+            <span class="el-loc">{element.location}</span>
           </p>
-          <p class="el-title">{element.title}</p>
+          <p class="el-title">
+            <span class="italic">{element.title}</span>,
+            <span class="second"> {element.subtitle}</span>
+          </p>
         </div>
-        <div class="el-btm">
-          <p>{element.shortDesc}</p>
-        </div>
-        <!-- {#if element.coverImg}
-          <img
-            class="el-img-thumb"
-            src={element.coverImg}
-            alt={element.title}
-            style="width: 75%"
-          />
-        {/if} -->
       </div>
     </button>
   {/each}
 </div>
+
+<style>
+  .italic {
+    background: transparent;
+    text-decoration: line-through;
+    font-style: italic;
+  }
+  .second {
+    background: transparent;
+  }
+  .el-top:hover .italic {
+    text-decoration: none;
+  }
+</style>
