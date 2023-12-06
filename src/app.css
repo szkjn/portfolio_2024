@@ -136,7 +136,7 @@ a:hover, button:hover {
 .el-img-thumb {
     width: 100%;
     padding-top: 0.25rem;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
 }
 
 /*

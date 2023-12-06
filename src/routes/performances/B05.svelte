@@ -4,8 +4,7 @@
   export let item: Performance;
 
   const images: string[] = [
-    "/images/fluids_treptower/02.jpg",
-    "/images/fluids_treptower/03.jpg",
+    "/images/fluids_hobb/02.jpg",
   ];
 </script>
 

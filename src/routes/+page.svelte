@@ -1,20 +1,23 @@
 <!-- src/routes/+page.svelte -->
 <script lang="ts">
   import Exhibitions from "../components/Exhibitions.svelte";
-  import Exhibition01 from "./exhibitions/01.svelte";
-  import Exhibition02 from "./exhibitions/02.svelte";
-  import Exhibition03 from "./exhibitions/03.svelte";
-  import Exhibition04 from "./exhibitions/04.svelte";
-  import Exhibition05 from "./exhibitions/05.svelte";
-  import Exhibition06 from "./exhibitions/06.svelte";
+  import Exhibition01 from "./exhibitions/A01.svelte";
+  import Exhibition02 from "./exhibitions/A02.svelte";
+  import Exhibition03 from "./exhibitions/A03.svelte";
+  import Exhibition04 from "./exhibitions/A04.svelte";
+  import Exhibition05 from "./exhibitions/A05.svelte";
+  import Exhibition06 from "./exhibitions/A06.svelte";
 
   import Performances from "../components/Performances.svelte";
-  import Performance01 from "./performances/01.svelte";
-  import Performance02 from "./performances/02.svelte";
-  import Performance03 from "./performances/03.svelte";
-  import Performance04 from "./performances/04.svelte";
-  import Performance05 from "./performances/05.svelte";
-  import Performance06 from "./performances/06.svelte";
+  import Performance01 from "./performances/B01.svelte";
+  import Performance02 from "./performances/B02.svelte";
+  import Performance03 from "./performances/B03.svelte";
+  import Performance04 from "./performances/B04.svelte";
+  import Performance05 from "./performances/B05.svelte";
+  import Performance06 from "./performances/B06.svelte";
+  import Performance07 from "./performances/B07.svelte";
+  import Performance08 from "./performances/B08.svelte";
+  import Performance09 from "./performances/B09.svelte";
 
   import Music from "../components/Music.svelte";
 
@@ -60,6 +63,9 @@
     "4": Performance04,
     "5": Performance05,
     "6": Performance06,
+    "7": Performance07,
+    "8": Performance08,
+    "9": Performance09,
   };
 
   let DetailComponent: any;
@@ -87,14 +93,16 @@
 
   $: if (isFocusMode) {
     switch (focusedCol) {
-        case "A":
-            DetailComponent = exhibitionComponents[selectedEl.id];
-        case "B":
-            DetailComponent = performanceComponents[selectedEl.id];
-        // case "C":
-        //     DetailComponent = exhibitionComponents[selectedEl.id];
-        // case "D":
-        //     DetailComponent = exhibitionComponents[selectedEl.id];
+      case "A":
+        DetailComponent = exhibitionComponents[selectedEl.id];
+        break;
+      case "B":
+        DetailComponent = performanceComponents[selectedEl.id];
+        break;
+      // case "C":
+      //     DetailComponent = exhibitionComponents[selectedEl.id];
+      // case "D":
+      //     DetailComponent = exhibitionComponents[selectedEl.id];
     }
     // Reactive debug logs
     console.log("isFocusMode", isFocusMode);
@@ -134,6 +142,9 @@
 </div>
 
 <style>
+  img {
+    max-width: 500px;
+  }
   .container {
     display: grid;
     grid-template-columns: 1.3fr 1.1fr 0.9fr 0.7fr;

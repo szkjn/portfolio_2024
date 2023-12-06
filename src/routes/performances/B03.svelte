@@ -3,10 +3,7 @@
   import "./performances.css";
   export let item: Performance;
 
-  const images: string[] = [
-    "/images/fluids_treptower/02.jpg",
-    "/images/fluids_treptower/03.jpg",
-  ];
+  const images: string[] = ["/images/wild_access/02.jpg"];
 </script>
 
 <main>
@@ -18,7 +15,15 @@
   <p class="short-desc">{item.shortDesc}</p>
   <div class="image-text-container">
     <div class="long-desc">
-      <p></p>
+      <p>
+        Wild Access Lichtenberg is an innovative outdoor performance that
+        combines elements of an audio walk and theater performance,
+        incorporating lights, sound, and dance. Each participant wears wireless
+        headphones and is guided through the experience by two facilitators who
+        communicate through talkie-walkies. The installation provides an
+        immersive journey that stimulates multiple senses and encourages the
+        viewer to engage with the outdoor surroundings on a deeper level.
+      </p>
     </div>
 
     <img src={item.coverImg} alt={item.title} class="cover-img" />

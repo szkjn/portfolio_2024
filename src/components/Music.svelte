@@ -20,21 +20,15 @@
         <div class="el-btm">
           <p>{element.shortDesc}</p>
         </div>
-        {#if element.coverImg}
+        <!-- {#if element.coverImg}
           <img
             class="el-img-thumb"
             src={element.coverImg}
             alt={element.title}
             style="width: 75%"
           />
-        {/if}
+        {/if} -->
       </div>
     </button>
   {/each}
 </div>
-
-<style>
-  img {
-    width: 66%;
-  }
-</style>

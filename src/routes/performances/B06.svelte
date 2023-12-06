@@ -3,10 +3,7 @@
   import "./performances.css";
   export let item: Performance;
 
-  const images: string[] = [
-    "/images/fluids_treptower/02.jpg",
-    "/images/fluids_treptower/03.jpg",
-  ];
+  const images: string[] = [];
 </script>
 
 <main>
