@@ -4,10 +4,8 @@
   export let item: Exhibition;
 
   const images: string[] = [
-    "/images/interference/03.jpg",
-    "/images/interference/04.jpg",
-    "/images/interference/02.jpg",
-    "/images/interference/05.jpg",
+    "/images/i_used_to_2023/03.jpg",
+    "/images/i_used_to_2023/02.jpg",
   ];
 </script>
 

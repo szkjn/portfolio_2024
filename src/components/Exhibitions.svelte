@@ -25,7 +25,7 @@
             class="el-img-thumb"
             src={element.coverImg}
             alt={element.title}
-            style="width: 50%"
+            style="width: 66%"
           />
         {/if}
       </div>

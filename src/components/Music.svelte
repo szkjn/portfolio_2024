@@ -17,6 +17,9 @@
           </p>
           <p class="el-title">{element.title}</p>
         </div>
+        <div class="el-btm">
+          <p>{element.shortDesc}</p>
+        </div>
         {#if element.coverImg}
           <img
             class="el-img-thumb"
@@ -25,9 +28,6 @@
             style="width: 75%"
           />
         {/if}
-      </div>
-      <div class="el-btm">
-        <p>{element.shortDesc}</p>
       </div>
     </button>
   {/each}

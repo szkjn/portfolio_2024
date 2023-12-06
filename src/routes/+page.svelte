@@ -6,11 +6,21 @@
   import Exhibition03 from "./exhibitions/03.svelte";
   import Exhibition04 from "./exhibitions/04.svelte";
   import Exhibition05 from "./exhibitions/05.svelte";
+  import Exhibition06 from "./exhibitions/06.svelte";
+
   import Performances from "../components/Performances.svelte";
+  import Performance01 from "./performances/01.svelte";
+  import Performance02 from "./performances/02.svelte";
+  import Performance03 from "./performances/03.svelte";
+  import Performance04 from "./performances/04.svelte";
+  import Performance05 from "./performances/05.svelte";
+  import Performance06 from "./performances/06.svelte";
+
   import Music from "../components/Music.svelte";
+
   import Programming from "../components/Programming.svelte";
 
-  import type { Data, RouteParams, ElementId } from "$lib/types";
+  import type { Data, RouteParams } from "$lib/types";
   import data from "$lib/private_data.json";
 
   export async function load({ params }: { params: RouteParams }) {
@@ -40,6 +50,16 @@
     "3": Exhibition03,
     "4": Exhibition04,
     "5": Exhibition05,
+    "6": Exhibition06,
+  };
+
+  const performanceComponents: any = {
+    "1": Performance01,
+    "2": Performance02,
+    "3": Performance03,
+    "4": Performance04,
+    "5": Performance05,
+    "6": Performance06,
   };
 
   let DetailComponent: any;
@@ -66,8 +86,15 @@
   $: transformD = isFocusMode ? "translateX(400%)" : "translateX(0)";
 
   $: if (isFocusMode) {
-    if (focusedCol === "A") {
-      DetailComponent = exhibitionComponents[selectedEl.id];
+    switch (focusedCol) {
+        case "A":
+            DetailComponent = exhibitionComponents[selectedEl.id];
+        case "B":
+            DetailComponent = performanceComponents[selectedEl.id];
+        // case "C":
+        //     DetailComponent = exhibitionComponents[selectedEl.id];
+        // case "D":
+        //     DetailComponent = exhibitionComponents[selectedEl.id];
     }
     // Reactive debug logs
     console.log("isFocusMode", isFocusMode);
@@ -143,12 +170,8 @@
 
   .full-content {
     overflow-y: scroll;
+    padding-top: 0.25rem;
     /* background: greenyellow; */
-  }
-
-  img {
-    max-width: 50vw;
-    max-height: 60vh;
   }
 
   .go-back-header {
