@@ -18,14 +18,14 @@
           <p class="el-title">{element.title}</p>
         </div>
         <div class="el-btm">
-          <p>{element.short_desc}</p>
+          <p>{element.shortDesc}</p>
         </div>
-        {#if element.main_img}
+        {#if element.coverImg}
           <img
             class="el-img-thumb"
-            src={element.main_img}
+            src={element.coverImg}
             alt={element.title}
-            style="width: 50%"
+            style="width: 66%"
           />
         {/if}
       </div>
