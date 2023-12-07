@@ -16,7 +16,7 @@
             <span class="el-loc">{element.location}</span>
           </p>
           <p class="el-title">
-            <span class="italic">{element.title}</span>,
+            <span class="title italic">{element.title}</span>,
             <span class="second"> {element.subtitle}</span>
           </p>
         </div>
@@ -26,15 +26,14 @@
 </div>
 
 <style>
-  .italic {
+  .title {
     background: transparent;
     text-decoration: line-through;
-    font-style: italic;
   }
   .second {
     background: transparent;
   }
-  .el-top:hover .italic {
+  .el-top:hover .title {
     text-decoration: none;
   }
 </style>

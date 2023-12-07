@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Exhibition } from "$lib/types";
+  import "../focus_pages.css";
 
   export let item: Exhibition;
 
@@ -12,15 +13,20 @@
 </script>
 
 <main>
-  <p>
-    <span class="el-date">{item.date}</span>
-    <span class="el-loc">{item.location}</span>
-  </p>
-  <h1 class="el-title focus">{item.title}</h1>
-  <br />
-  <p class="short-desc">{item.shortDesc}</p>
-  <div class="image-text-container">
-    <div class="long-desc">
+  <div class="header">
+    <p>
+      <span class="el-date">{item.date}</span>
+      <span class="el-loc">{item.location}</span>
+    </p>
+    <h1 class="el-title focus">{item.title}</h1>
+    <br />
+    <p class="short-desc">{item.shortDesc}</p>
+    <p class="short-desc italic">
+      AqTusheti end-of-residency exhibition
+    </p>
+  </div>
+  <div class="focus-boxes">
+    <div class="focus-box long-desc">
       <p>
         интерference is a first time collaboration between Anastasia Zhylinskaya
         and Jun Suzuki that brings together their combined interests in
@@ -29,6 +35,7 @@
         explore their interpretation of borders and what evade them : natural
         elements and electromagnetic waves.
       </p>
+      <br />
       <p>
         Using contact microphones loosely attached to metal rods subject to
         outdoors elements, and an omnidirectional geophone that captures the
@@ -38,6 +45,7 @@
         submerge the room into an endless sombre drone punctuated by crashing
         roars of metal rods.
       </p>
+      <br />
       <p>
         Simultaneously, each footstep randomly triggers a new short-term
         frequency from an SDR (Software Defined Radio) playing broadcasts from
@@ -48,20 +56,16 @@
         alternative sense of togetherness.
       </p>
     </div>
-
-    <img src={item.coverImg} alt={item.title} class="cover-img" />
-  </div>
-
-  <div class="gallery">
+    <img src={item.coverImg} alt={item.title} class="focus-box cover-img" />
     {#each images as image}
-      <img src={image} alt={item.title} class="gallery-image" />
+      <img src={image} alt={item.title} class="focus-box" />
     {/each}
   </div>
 </main>
 
 <style>
-  .long-desc {
-    background-color: var(--dark-mode-bg);
-    padding: 2rem;
+  .focus-box.cover-img,
+  img {
+    max-width: 45%;
   }
 </style>

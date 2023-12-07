@@ -183,9 +183,12 @@
   }
 
   .go-back-header {
+    padding-bottom: 0.3rem;
     margin-bottom: 1rem;
-    border: 1px var(--dark-mode-bg) solid;
     font-size: 0.75rem;
+    /* border: 1px var(--dark-mode-bg) solid; */
+
+    border-bottom: 1px var(--dark-mode-color) solid;
   }
   .go-back-button {
     padding: 0;

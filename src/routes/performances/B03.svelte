@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Performance } from "$lib/types";
-  import "./performances.css";
+  import "../focus_pages.css";
+
   export let item: Performance;
 
   const images: string[] = ["/images/wild_access/02.jpg"];

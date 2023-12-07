@@ -1,12 +1,13 @@
 <script lang="ts">
   import type { Performance } from "$lib/types";
-  import "./performances.css";
+  import "../focus_pages.css";
+
   export let item: Performance;
 
   const images: string[] = [
     "/images/fluids_tia/02.jpg",
     "/images/fluids_tia/04.jpg",
-    "/images/fluids_tia/03.jpg"
+    "/images/fluids_tia/03.jpg",
   ];
 </script>
 
