@@ -24,7 +24,7 @@
   <div class="focus-boxes">
     <img src={item.coverImg} alt={item.title} class="focus-box cover-img" />
     <div class="focus-box long-desc">
-      <p>A grandiose equilibrium space for our sense. Somewhere deep in Swedish countryside.</p>
+      <p>A grandiose equilibrium space for our senses. Somewhere deep in Swedish countryside.</p>
     </div>
     {#each images as image}
       <img src={image} alt={item.title} class="focus-box" />

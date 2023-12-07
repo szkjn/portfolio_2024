@@ -186,7 +186,7 @@ a:hover, button:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(56, 27, 115); /* Color of the scrollbar thumb */
+    background-color: rgb(41, 17, 90); /* Color of the scrollbar thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {

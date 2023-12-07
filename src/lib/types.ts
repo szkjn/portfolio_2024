@@ -1,6 +1,7 @@
 export interface Exhibition {
     id: string;
     title: string;
+    subtitle: string;
     shortDesc: string;
     location: string;
     date: string;
@@ -10,6 +11,7 @@ export interface Exhibition {
 export interface Performance {
     id: string;
     title: string;
+    subtitle: string;
     shortDesc: string;
     location: string;
     date: string;
@@ -19,6 +21,7 @@ export interface Performance {
 export interface Release {
     id: string;
     title: string;
+    subtitle: string;
     shortDesc: string;
     location: string;
     date: string;
@@ -28,6 +31,7 @@ export interface Release {
 export interface Programming {
     id: string;
     title: string;
+    subtitle: string;
     shortDesc: string;
     location: string;
     date: string;

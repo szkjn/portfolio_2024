@@ -8,23 +8,26 @@
 </script>
 
 <main>
-  <p>
-    <span class="el-date">{item.date}</span>
-    <span class="el-loc">{item.location}</span>
-  </p>
-  <h1 class="el-title focus">{item.title}</h1>
-  <p class="short-desc">{item.shortDesc}</p>
-  <div class="image-text-container">
-    <div class="long-desc">
-      <p></p>
-    </div>
-
-    <img src={item.coverImg} alt={item.title} class="cover-img" />
+  <div class="header">
+    <p>
+      <span class="el-date">{item.date}</span>
+      <span class="el-loc">{item.location}</span>
+    </p>
+    <h1 class="el-title focus">{item.title}</h1>
+    <br />
+    <p class="short-desc">{item.shortDesc}</p>
+    <br />
+    <p class="short-desc italic">
+      The___Dream, curated by House of Beautiful Business, hosted by futurehain
+    </p>
   </div>
-
-  <div class="gallery">
+  <div class="focus-boxes">
+    <img src={item.coverImg} alt={item.title} class="focus-box cover-img" />
+    <div class="focus-box long-desc">
+      
+    </div>
     {#each images as image}
-      <img src={image} alt={item.title} class="gallery-image" />
+      <img src={image} alt={item.title} class="focus-box" />
     {/each}
   </div>
 </main>
