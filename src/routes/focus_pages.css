@@ -1,12 +1,14 @@
-a {
-    color: mediumpurple
+
+.focus-box a {
+    color: mediumpurple;
+    font-size: 0.8rem;
 }
 
 .header {
+    padding-top: 1rem;
     padding-bottom: .5rem;
     margin-bottom: 3rem;
-    /* border-bottom: 4px solid var(--dark-mode-color); */
-    box-shadow: 0px 20px 20px var(--dark-mode-color);
+    /* box-shadow: 0px 6px 20px var(--dark-mode-color); */
 }
 .focus {
     width: auto;
@@ -33,7 +35,7 @@ a {
 }
 
 /* .focus-boxes > * {
-    border: 2px solid red;
+    border: 1px solid grey;
 } */
 
 /* .focus-box > p{
@@ -48,12 +50,17 @@ a {
     /* padding-top: 10rem; */
     /* width: 100%; */
     max-width: 1280px;
+    max-width: 50vw;
     height: auto;
+}
+
+img {
+    max-width: 33vw;
 }
 
 .long-desc {
     margin: 0;
-    width: 100%;
+    width: var(--dark-mode-color);
     color: white;
     /* padding: 2rem 0 0 2rem; */
     text-align: justify;
@@ -70,3 +77,4 @@ a {
 /* .cover-img {
     width: 100%;
 } */
+

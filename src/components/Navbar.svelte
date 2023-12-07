@@ -5,7 +5,9 @@
 
 <nav>
   <h1 class="">j u n<span class="">s u z u k i</span></h1>
-  <h1 class="nav-title">multimedia artist + data engineer</h1>
+  <h1 class="nav-title">
+    multimedia artist + data engineer
+  </h1>
   <ul class="nav-links">
     <li><a href="/about">t a l k 2 m e : : )</a></li>
   </ul>
@@ -33,12 +35,15 @@
     transition: letter-spacing 1s;
   }
   .nav-title:hover {
-    letter-spacing: -.5rem;
+    letter-spacing: 0rem;
   }
 
   .nav-links {
     list-style: none;
     display: flex;
     gap: 1rem;
+  }
+
+  svg {
   }
 </style>

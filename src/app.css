@@ -1,6 +1,8 @@
-/*
-    GENERAL
-*/
+/* --------------------------------------- 
+------------------------------------------ 
+                GENERAL
+------------------------------------------ 
+--------------------------------------- */
 
 :root {
     --navbar-height: 30px;
@@ -25,6 +27,7 @@ body {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
 }
 
 h1, h2, h3 {
@@ -75,9 +78,11 @@ a:hover, button:hover {
   }
   
 
-/*
-    CLASSES
-*/
+/* --------------------------------------- 
+------------------------------------------ 
+                CLASSES
+------------------------------------------
+----------------------------------------*/
 
 .col-title {
     /* text-transform: uppercase; */
@@ -163,9 +168,13 @@ a:hover, button:hover {
     /* filter: grayscale(100%); */
 }
 
-/*
-    SCROLLBAR
-*/
+
+
+/* --------------------------------------- 
+------------------------------------------ 
+                SCROLLBAR
+------------------------------------------
+----------------------------------------*/
 
 /* Webkit browsers */
 ::-webkit-scrollbar {
@@ -177,7 +186,7 @@ a:hover, button:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--dark-mode-scrollbar-thumb); /* Color of the scrollbar thumb */
+    background-color: rgb(56, 27, 115); /* Color of the scrollbar thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -188,13 +197,15 @@ a:hover, button:hover {
 * {
     scrollbar-width: thin; /* 'auto' or 'thin' */
     scrollbar-color: rgba(1, 0, 0, 0.5); /* thumb and track color */
-    /* scrollbar-color: rgba(1, 0, 0, 0.2) transparent; thumb and track color */
 }
 
 
-/*  
-    KEYFRAMES
-*/
+
+/* --------------------------------------- 
+------------------------------------------ 
+                KEYFRAMES
+------------------------------------------
+----------------------------------------*/
 
 @keyframes blinkText {
     0% {color: var(--dark-mode-color)}

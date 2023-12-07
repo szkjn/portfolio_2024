@@ -178,16 +178,16 @@
 
   .full-content {
     overflow-y: scroll;
-    padding-top: 0.25rem;
+    /* padding-top: 0.25rem; */
     /* background: greenyellow; */
   }
 
   .go-back-header {
     padding-bottom: 0.3rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     font-size: 0.75rem;
     /* border: 1px var(--dark-mode-bg) solid; */
-
+    background: transparent;
     border-bottom: 1px var(--dark-mode-color) solid;
   }
   .go-back-button {

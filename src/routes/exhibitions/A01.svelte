@@ -3,7 +3,7 @@
   import "../focus_pages.css";
   export let item: Exhibition;
 
-  const images: string[] = [, "/images/birds_chirping/03.jpg"];
+  const images: string[] = ["/images/birds_chirping/03.jpg"];
 </script>
 
 <main>
