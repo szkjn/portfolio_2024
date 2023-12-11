@@ -1,6 +1,8 @@
-/*
-    GENERAL
-*/
+/* --------------------------------------- 
+------------------------------------------ 
+                GENERAL
+------------------------------------------ 
+--------------------------------------- */
 
 :root {
     --navbar-height: 30px;
@@ -21,7 +23,11 @@
 
 body {
     /* border: 1px solid red; */
-    margin: 0;
+    max-width: 1280px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
 }
 
 h1, h2, h3 {
@@ -56,9 +62,27 @@ a:hover, button:hover {
     cursor: pointer;
 }
 
-/*
-    CLASSES
-*/
+.italic {
+    font-style: italic;
+}
+
+.shadow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.7;
+    filter: blur(5px);
+  }
+  
+
+/* --------------------------------------- 
+------------------------------------------ 
+                CLASSES
+------------------------------------------
+----------------------------------------*/
 
 .col-title {
     /* text-transform: uppercase; */
@@ -67,8 +91,9 @@ a:hover, button:hover {
     z-index: 10;
     padding-bottom: 0.3rem;
     margin-bottom: 1rem;
-    border-bottom: 1px var(--dark-mode-color) solid;
     font-size: 0.75rem;
+    border-bottom: 1px var(--dark-mode-color) solid;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .el {
@@ -77,6 +102,7 @@ a:hover, button:hover {
     padding: 0;
     /* transition: background-color 0.1s, border 0.1s; */
     border: 1px solid var(--dark-mode-bg);
+    width: 100%;
 }
 
 .el:hover {
@@ -112,36 +138,43 @@ a:hover, button:hover {
     padding: 0 4px;
 }
 
-.el-date-modal {
-    border: 0;
-    border-right: 1px solid var(--dark-mode-color);
-}
-
 .el-title {
-    background-color: var(--dark-mode-color);
+    /* background-color: var(--dark-mode-color); */
     /* border: 1px solid greenyellow; */
     opacity: 1;
-    color: var(--dark-mode-bg);
-    padding: 0 .25rem;
+    color: var(--dark-mode-color);
+    padding: 0;
     margin: 0.25rem 0;
     display: inline-block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1;
+    overflow-wrap: break-word;
     /* font-family: Calibri, sans-serif; */
     /* font-weight: 500; */
 }
 
 .el-loc {
-    padding: 0 2px;
+    background-color: var(--dark-mode-color);
+    color: var(--dark-mode-bg);
+    padding: 0 4px;
+    font-weight: 600;
 }
 
 .el-img-thumb {
     width: 100%;
     padding-top: 0.25rem;
+    
     /* filter: grayscale(100%); */
 }
 
-/*
-    SCROLLBAR
-*/
+
+
+/* --------------------------------------- 
+------------------------------------------ 
+                SCROLLBAR
+------------------------------------------
+----------------------------------------*/
 
 /* Webkit browsers */
 ::-webkit-scrollbar {
@@ -153,7 +186,7 @@ a:hover, button:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--dark-mode-scrollbar-thumb); /* Color of the scrollbar thumb */
+    background-color: rgb(41, 17, 90); /* Color of the scrollbar thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -164,13 +197,15 @@ a:hover, button:hover {
 * {
     scrollbar-width: thin; /* 'auto' or 'thin' */
     scrollbar-color: rgba(1, 0, 0, 0.5); /* thumb and track color */
-    /* scrollbar-color: rgba(1, 0, 0, 0.2) transparent; thumb and track color */
 }
 
 
-/*  
-    KEYFRAMES
-*/
+
+/* --------------------------------------- 
+------------------------------------------ 
+                KEYFRAMES
+------------------------------------------
+----------------------------------------*/
 
 @keyframes blinkText {
     0% {color: var(--dark-mode-color)}

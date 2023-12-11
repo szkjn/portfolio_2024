@@ -19,7 +19,11 @@
   import Performance08 from "./performances/B08.svelte";
   import Performance09 from "./performances/B09.svelte";
 
-  import Music from "../components/Music.svelte";
+  import Releases from "../components/Releases.svelte";
+  import Release01 from "./releases/C01.svelte";
+  import Release02 from "./releases/C02.svelte";
+  import Release03 from "./releases/C03.svelte";
+  import Release04 from "./releases/C04.svelte";
 
   import Programming from "../components/Programming.svelte";
 
@@ -68,6 +72,13 @@
     "9": Performance09,
   };
 
+  const releaseComponents: any = {
+    "1": Release01,
+    "2": Release02,
+    "3": Release03,
+    "4": Release04,
+  };
+
   let DetailComponent: any;
 
   let isFocusMode: boolean = false;
@@ -99,14 +110,15 @@
       case "B":
         DetailComponent = performanceComponents[selectedEl.id];
         break;
-      // case "C":
-      //     DetailComponent = exhibitionComponents[selectedEl.id];
+      case "C":
+        DetailComponent = releaseComponents[selectedEl.id];
       // case "D":
       //     DetailComponent = exhibitionComponents[selectedEl.id];
     }
     // Reactive debug logs
     console.log("isFocusMode", isFocusMode);
     console.log("Focused Column:", focusedCol);
+    console.log("Element id:", selectedEl.id);
   }
 </script>
 
@@ -118,7 +130,7 @@
     <Performances {selectEl} />
   </div>
   <div class="column" style="transform: {transformC}">
-    <Music {selectEl} />
+    <Releases {selectEl} />
   </div>
   <div class="column" style="transform: {transformD}">
     <Programming {selectEl} />
@@ -130,11 +142,6 @@
         <button on:click={clearFocus} class="go-back-button">back</button>
       </div>
       <div class="full-content">
-        <!-- <p class="focus-header">
-          <span class="el-date">{selectedEl.date}</span>
-          <span class="el-loc">{selectedEl.location}</span>
-          <span class="el-title">{selectedEl.title}</span>
-        </p> -->
         <svelte:component this={DetailComponent} item={selectedEl} />
       </div>
     </div>
@@ -142,9 +149,6 @@
 </div>
 
 <style>
-  img {
-    max-width: 500px;
-  }
   .container {
     display: grid;
     grid-template-columns: 1.3fr 1.1fr 0.9fr 0.7fr;
@@ -181,14 +185,17 @@
 
   .full-content {
     overflow-y: scroll;
-    padding-top: 0.25rem;
+    /* padding-top: 0.25rem; */
     /* background: greenyellow; */
   }
 
   .go-back-header {
-    margin-bottom: 1rem;
-    border: 1px var(--dark-mode-bg) solid;
+    padding-bottom: 0.3rem;
+    /* margin-bottom: 1rem; */
     font-size: 0.75rem;
+    /* border: 1px var(--dark-mode-bg) solid; */
+    background: transparent;
+    border-bottom: 1px var(--dark-mode-color) solid;
   }
   .go-back-button {
     padding: 0;

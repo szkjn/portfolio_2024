@@ -4,11 +4,12 @@
 </script>
 
 <nav>
-  <h1 class="logo">j u n<span class="logo">s u z u k i</span></h1>
-  <h1>multimedia artist + data engineer</h1>
+  <h1 class="">j u n<span class="">s u z u k i</span></h1>
+  <h1 class="nav-title">
+    multimedia artist + data engineer
+  </h1>
   <ul class="nav-links">
-    <li><a href="/">where is home ?</a></li>
-    <li><a href="/about">talk 2 me</a></li>
+    <li><a href="/about">t a l k 2 m e : : )</a></li>
   </ul>
 </nav>
 
@@ -29,14 +30,20 @@
   a {
     font-size: 0.8rem;
   }
-/* 
-  .logo {
-    animation: blinkText .2s infinite;
-  } */
+  .nav-title {
+    letter-spacing: 0rem;
+    transition: letter-spacing 1s;
+  }
+  .nav-title:hover {
+    letter-spacing: 0rem;
+  }
 
   .nav-links {
     list-style: none;
     display: flex;
     gap: 1rem;
+  }
+
+  svg {
   }
 </style>

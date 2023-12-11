@@ -1,4 +1,4 @@
-<!-- src/components/Music.svelte -->
+<!-- src/components/Releases.svelte -->
 <script lang="ts">
   import data from "$lib/private_data.json";
   export let selectEl: any;
@@ -13,22 +13,27 @@
         <div class="el-top-left">
           <p class="el-top-left-header">
             <span class="el-date">{element.date}</span>
-            {element.location}
+            <span class="el-loc">{element.location}</span>
           </p>
-          <p class="el-title">{element.title}</p>
+          <p class="el-title">
+            <span class="title italic">{element.title}</span>,
+            <span class="second"> {element.subtitle}</span>
+          </p>
         </div>
-        <div class="el-btm">
-          <p>{element.shortDesc}</p>
-        </div>
-        <!-- {#if element.coverImg}
-          <img
-            class="el-img-thumb"
-            src={element.coverImg}
-            alt={element.title}
-            style="width: 75%"
-          />
-        {/if} -->
       </div>
     </button>
   {/each}
 </div>
+
+<style>
+  .title {
+    background: transparent;
+    text-decoration: line-through;
+  }
+  .second {
+    background: transparent;
+  }
+  .el-top:hover .title {
+    text-decoration: none;
+  }
+</style>
