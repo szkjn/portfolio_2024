@@ -8,26 +8,39 @@
 <div>
   <h2 class="col-title">p r o g r a m m i n g</h2>
   {#each elements as element}
-    <button class="el" on:click={() => selectEl("D", element)}>
+    <!-- <button class="el" on:click={() => selectEl("D", element)}> -->
+    <button class="el">
       <div class="el-top">
         <div class="el-top-left">
           <p class="el-top-left-header">
             <span class="el-date">{element.date}</span>
-            {element.location}
+            <span class="el-loc">{element.location}</span>
           </p>
-          <p class="el-title">{element.title}</p>
+          <p class="el-title">
+            <span class="title">{element.title}, </span>
+            {#if element.subtitle !== ""}
+              <span class="subtitle"> {element.subtitle}</span>
+            {/if}
+          </p>
         </div>
-        <!-- {#if element.main_img}
-          <img
-            class="el-img-thumb"
-            src={element.main_img}
-            alt={element.title}
-          />
-        {/if} -->
       </div>
-      <!-- <div class="el-btm">
-        <p>{element.shortDesc}</p>
-      </div> -->
     </button>
   {/each}
 </div>
+
+<style>
+  .title {
+    background: transparent;
+  }
+  .subtitle {
+    background: transparent;
+  }
+  .el-top:hover .subtitle {
+    text-decoration: line-through;
+    color: #333;
+  }
+  .el-top:hover .title {
+    text-decoration: line-through;
+    color: #333;
+  }
+</style>

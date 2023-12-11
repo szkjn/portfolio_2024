@@ -1,4 +1,4 @@
-<!-- src/components/Music.svelte -->
+<!-- src/components/Releases.svelte -->
 <script lang="ts">
   import data from "$lib/private_data.json";
   export let selectEl: any;

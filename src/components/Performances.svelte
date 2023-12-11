@@ -18,9 +18,9 @@
           <p class="el-title">
             <span class="title">{element.title}</span>
             {#if element.subtitle !== ""}
-            <span class="second">, {element.subtitle}</span>
+              <span class="subtitle">, {element.subtitle}</span>
             {/if}
-            </p>
+          </p>
         </div>
       </div>
     </button>
@@ -31,11 +31,13 @@
   .title {
     background: transparent;
   }
-  .second {
+  .subtitle {
     background: transparent;
   }
   .el-top:hover .title {
     text-decoration: line-through;
-    /* font-style: italic; */
   }
+  /* .el-top:hover .subtitle {
+    color: #333;
+  } */
 </style>
