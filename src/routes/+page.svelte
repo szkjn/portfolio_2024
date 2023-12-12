@@ -153,10 +153,8 @@
     display: grid;
     grid-template-columns: 1.3fr 1.1fr 0.9fr 0.7fr;
     margin: 0.5rem 0 0 0;
-    padding: 0 calc(var(--global-padding) * 7/8);
-    height: calc(
-      100vh - var(--navbar-height) - var(--footbar-height) - 0.65rem
-    );
+    padding: 0 calc(var(--global-padding) * 9/10);
+    height: calc(100vh - var(--navbar-height) - var(--footbar-height) - 0.5rem);
     overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
@@ -167,7 +165,7 @@
   .column {
     height: 100%;
     overflow-y: auto;
-    padding: 0 calc(var(--global-padding) * 1/8);
+    padding: 0 calc(var(--global-padding) * 1 / 10);
     transition: transform 0.1s ease-in-out;
     z-index: 1;
   }
@@ -192,8 +190,8 @@
   }
 
   .go-back-header {
-    padding-bottom: 0.3rem;
     /* margin-bottom: 1rem; */
+    padding-bottom: 0.3rem;
     font-size: 0.75rem;
     /* border: 1px var(--dark-mode-bg) solid; */
     background: transparent;

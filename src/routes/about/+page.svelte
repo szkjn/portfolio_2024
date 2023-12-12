@@ -42,9 +42,15 @@
     </div>
   </div>
   <div class="btm">
-    {#each images as image}
+    <!-- {#each images as image}
       <img src={image} alt="" class="" />
-    {/each}
+    {/each} -->
+    <img src="/images/selfies/01.png" alt="" class="img-top" />
+    <img src="/images/selfies/02.png" alt="" class="img-mid" />
+    <img src="/images/selfies/03.png" alt="" class="img-low" />
+    <img src="/images/selfies/04.png" alt="" class="img-low" />
+    <img src="/images/selfies/05.png" alt="" class="img-mid" />
+    <img src="/images/selfies/06.png" alt="" class="img-top" />
   </div>
 </div>
 
@@ -62,7 +68,7 @@
 
   img {
     max-width: 16.66%;
-    transition: 0.2s ease-in-out;
+    /* transition: 0.5s ease-in-out; */
   }
   .top {
     display: flex;
@@ -73,10 +79,53 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .img-mid {
+    animation: flashsmilemid 10s infinite;
+  }
+  .img-low {
+    animation: flashsmilelow 10s infinite;
+  }
   .first,
   .second {
     text-align: justify;
     /* border: 1px solid blue; */
     max-width: 33%;
+  }
+
+  @keyframes flashsmilemid {
+    94% {
+      transform: translateY(0rem);
+    }
+    95% {
+      transform: translateY(4rem);
+    }
+    96% {
+      transform: translateY(3rem);
+    }
+    98% {
+      transform: translateY(4rem);
+    }
+    100% {
+      transform: translateY(0rem);
+    }
+  }
+
+  @keyframes flashsmilelow {
+    94% {
+      transform: translateY(0rem);
+    }
+    95% {
+      transform: translateY(8rem);
+    }
+    96% {
+      transform: translateY(6rem);
+    }
+    98% {
+      transform: translateY(8rem);
+    }
+    100% {
+      transform: translateY(0rem);
+    }
   }
 </style>

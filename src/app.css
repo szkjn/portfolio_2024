@@ -257,8 +257,3 @@ a:hover, button:hover {
     100% {border-left: 1px solid var(--dark-mode-bg)}
 }
 
-/* @keyframes slowblink {
-    0% {border: 1px solid var(--dark-mode-bg)}
-    50% {border: 1px solid #888} 
-    100% {border: 1px solid var(--dark-mode-bg)}
-} */

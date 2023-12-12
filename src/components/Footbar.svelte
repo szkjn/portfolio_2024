@@ -4,13 +4,13 @@
 </script>
 
 <footer class="container">
-  <p>f o o o o o o o o t b a r</p>
+  <p>this and that being eluded but now</p>
 </footer>
 
 <style>
   footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0;
     height: var(--footbar-height);

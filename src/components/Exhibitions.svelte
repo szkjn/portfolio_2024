@@ -25,7 +25,6 @@
       </div>
     </button>
   {/each}
-  <h2 class="col-btm">e x h i b i t i o n s</h2>
 </div>
 
 <style>
