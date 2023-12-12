@@ -4,12 +4,10 @@
 </script>
 
 <nav>
-  <h1 class="">j u n<span class="">s u z u k i</span></h1>
-  <h1 class="nav-title">
-    multimedia artist + data engineer
-  </h1>
+  <a href="/"><h1 class="">j u n<span class="">s u z u k i</span></h1></a>
+  <!-- <h1 class="nav-title">:)</h1> -->
   <ul class="nav-links">
-    <li><a href="/about">t a l k 2 m e : : )</a></li>
+    <li><a href="/about">+++</a></li>
   </ul>
 </nav>
 
