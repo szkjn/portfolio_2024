@@ -5,10 +5,7 @@
 
 <nav class="container">
   <a href="/"><h1 class="">j u n<span class="">s u z u k i</span></h1></a>
-  <!-- <h1 class="nav-title">:)</h1> -->
-  <ul class="nav-links">
-    <li><a href="/about">+++</a></li>
-  </ul>
+  <a href="/about" class="about">.- -... --- ..- -</a>
 </nav>
 
 <style>
@@ -42,6 +39,8 @@
     gap: 1rem;
   }
 
-  svg {
+  .about {
+    /* letter-spacing: 0.1rem; */
+    padding-left: 1.5rem;
   }
 </style>

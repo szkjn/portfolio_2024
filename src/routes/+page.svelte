@@ -1,5 +1,7 @@
 <!-- src/routes/+page.svelte -->
 <script lang="ts">
+  import FloatingText from "../components/FloatingText.svelte";
+
   import Exhibitions from "../components/Exhibitions.svelte";
   import Exhibition01 from "./exhibitions/A01.svelte";
   import Exhibition02 from "./exhibitions/A02.svelte";
@@ -122,6 +124,8 @@
   }
 </script>
 
+<FloatingText startX={100} startY={100}>where</FloatingText>
+
 <div class={`container ${isFocusMode ? "focus-mode" : ""}`}>
   <div class="column" style="transform: {transformA}">
     <Exhibitions {selectEl} />
@@ -153,7 +157,7 @@
     display: grid;
     grid-template-columns: 1.3fr 1.1fr 0.9fr 0.7fr;
     margin: 0.5rem 0 0 0;
-    padding: 0 calc(var(--global-padding) * 9/10);
+    padding: 0 calc(var(--global-padding) * 9 / 10);
     height: calc(100vh - var(--navbar-height) - var(--footbar-height) - 0.5rem);
     overflow-y: hidden;
     overflow-x: hidden;
