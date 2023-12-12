@@ -30,21 +30,28 @@
       </div>
     </div>
     <img src={item.coverImg} alt={item.title} class="focus-box cover-img" />
+    <iframe
+      title=""
+      src="https://bandcamp.com/EmbeddedPlayer/album=1709906394/size=large/bgcol=333/linkcol=0687f5/tracklist=false/artwork=small/track=1670631233/transparent=true/"
+      seamless
+      ><a href="https://radiationmutation.bandcamp.com/album/propagation-2019"
+        >PROPAGATION 2019 by RADIATION</a
+      ></iframe
+    >
   </div>
-  <iframe
-    title=""
-    src="https://bandcamp.com/EmbeddedPlayer/album=1709906394/size=large/bgcol=333/linkcol=0687f5/tracklist=false/artwork=small/track=1670631233/transparent=true/"
-    seamless
-    ><a href="https://radiationmutation.bandcamp.com/album/propagation-2019"
-      >PROPAGATION 2019 by RADIATION</a
-    ></iframe
-  >
 </main>
 
 <style>
+  main {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+  }
   iframe {
-    border: 0;
     width: 100%;
+    border: 0;
     height: 120px;
   }
   .el-title {
@@ -64,7 +71,6 @@
     font-size: 0.8rem;
   }
   .cover-img {
-    width: 50%;
-    max-width: 46%;
+    max-width: 42%;
   }
 </style>
