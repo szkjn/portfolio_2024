@@ -8,5 +8,5 @@
 <div class="parent">
   <Navbar />
   <slot />
-  <Footbar />
+  <!-- <Footbar /> -->
 </div>
