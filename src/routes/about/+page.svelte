@@ -50,7 +50,7 @@
 
 <style>
   .container {
-    margin: 1.5rem 1.5rem;
+    margin: 1.5rem 0;
     height: calc(100vh - var(--navbar-height) - 3rem);
     /* overflow-y: hidden; */
     overflow-x: hidden;

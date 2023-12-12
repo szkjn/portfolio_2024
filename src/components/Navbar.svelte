@@ -3,7 +3,7 @@
   // Add any necessary script here
 </script>
 
-<nav>
+<nav class="container">
   <a href="/"><h1 class="">j u n<span class="">s u z u k i</span></h1></a>
   <!-- <h1 class="nav-title">:)</h1> -->
   <ul class="nav-links">
@@ -19,9 +19,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1.5rem;
     margin: 0;
     height: var(--navbar-height);
+    background: #333;
   }
 
   h1,

@@ -152,8 +152,11 @@
   .container {
     display: grid;
     grid-template-columns: 1.3fr 1.1fr 0.9fr 0.7fr;
-    margin: 1.5rem 0.5rem;
-    height: calc(100vh - var(--navbar-height) - 3rem);
+    margin: 0.5rem 0 0 0;
+    padding: 0 calc(var(--global-padding) * 7/8);
+    height: calc(
+      100vh - var(--navbar-height) - var(--footbar-height) - 0.65rem
+    );
     overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
@@ -162,12 +165,11 @@
     /* background: var(--dark-mode-bg); */
   }
   .column {
-    height: calc(100vh - var(--navbar-height) - 3rem);
+    height: 100%;
     overflow-y: auto;
-    padding: 0 1rem;
+    padding: 0 calc(var(--global-padding) * 1/8);
     transition: transform 0.1s ease-in-out;
     z-index: 1;
-    /* border: 1px dashed greenyellow; */
   }
 
   .focus-window {
@@ -176,7 +178,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 var(--global-padding);
     z-index: 0;
     display: flex;
     flex-direction: column;

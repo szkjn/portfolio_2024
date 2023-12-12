@@ -16,17 +16,17 @@
             <span class="el-loc">{element.location}</span>
           </p>
           <p class="el-title">
-          <span class="title">{element.title}</span>
-          {#if element.subtitle !== ""}
-          <span class="subtitle">, {element.subtitle}</span>
-          {/if}
+            <span class="title">{element.title}</span>
+            {#if element.subtitle !== ""}
+              <span class="subtitle">, {element.subtitle}</span>
+            {/if}
           </p>
         </div>
       </div>
     </button>
   {/each}
+  <h2 class="col-btm">e x h i b i t i o n s</h2>
 </div>
-
 
 <style>
   .title {

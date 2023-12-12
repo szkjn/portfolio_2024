@@ -5,13 +5,15 @@
 --------------------------------------- */
 
 :root {
-    --navbar-height: 30px;
+    --navbar-height: 2rem;
+    --footbar-height: 1.5rem;
     --dark-mode-bg: #111;
     --dark-mode-color: #ddd;
     --dark-mode-bg-hover: #222;
     --dark-mode-scrollbar-track: #181818;
     --dark-mode-scrollbar-thumb: hsl(0, 0%, 20%);
     --dark-mode-scrollbar-thumb: #252525;
+    --global-padding: 7rem;
 }
 
 * {
@@ -22,12 +24,21 @@
 }
 
 body {
-    /* border: 1px solid red; */
-    max-width: 1280px;
+    /* border: 1px dotted greenyellow; */
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
+    overflow-y: hidden;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    /* max-width: 1280px; */
+
 }
 
 h1, h2, h3 {
@@ -83,6 +94,12 @@ a:hover, button:hover {
                 CLASSES
 ------------------------------------------
 ----------------------------------------*/
+.container {
+    padding: 0 var(--global-padding);
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
 
 .col-title {
     /* text-transform: uppercase; */
