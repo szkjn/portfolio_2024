@@ -1,7 +1,7 @@
 <!-- src/components/Programming.svelte -->
 <script lang="ts">
   import data from "$lib/data.json";
-  export let selectEl: any;
+  // export let selectEl: any;
   const elements = data.programming;
 </script>
 
