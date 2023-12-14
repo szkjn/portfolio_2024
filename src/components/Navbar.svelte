@@ -25,22 +25,7 @@
   a {
     font-size: 0.8rem;
   }
-  .nav-title {
-    letter-spacing: 0rem;
-    transition: letter-spacing 1s;
-  }
-  .nav-title:hover {
-    letter-spacing: 0rem;
-  }
-
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-
   .about {
-    /* letter-spacing: 0.1rem; */
     padding-left: 1.5rem;
   }
 </style>
