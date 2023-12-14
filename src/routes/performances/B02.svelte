@@ -5,8 +5,8 @@
   export let item: Performance;
 
   const images: string[] = [
-    "/images/fluids_apal/02.png",
-    "/images/fluids_apal/03.png",
+    "/images/fluids_apal/02.jpg",
+    "/images/fluids_apal/03.jpg",
   ];
 </script>
 
@@ -27,7 +27,7 @@
   <div class="focus-boxes">
     <img src={item.coverImg} alt={item.title} class="focus-box" />
     {#each images as image}
-    <img src={image} alt={item.title} class="focus-box" />
+      <img src={image} alt={item.title} class="focus-box" />
     {/each}
     <div class="focus-box long-desc"></div>
   </div>

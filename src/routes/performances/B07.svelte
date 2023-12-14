@@ -6,7 +6,7 @@
 
   const images: string[] = [
     "/images/fluids_bucht/01.jpg",
-    "/images/fluids_bucht/03.png",
+    "/images/fluids_bucht/03.jpg",
   ];
 </script>
 

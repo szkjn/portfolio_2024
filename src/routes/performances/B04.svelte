@@ -4,7 +4,7 @@
 
   export let item: Performance;
 
-  const images: string[] = ["/images/fluids_savvy/02.png"];
+  const images: string[] = ["/images/fluids_savvy/02.jpg"];
 </script>
 
 <main>
