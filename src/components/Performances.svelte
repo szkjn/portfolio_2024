@@ -1,6 +1,6 @@
 <!-- src/components/Performancezs.svelte -->
 <script lang="ts">
-  import data from "$lib/private_data.json";
+  import data from "$lib/data.json";
   export let selectEl: any;
   const elements = data.performances;
 </script>

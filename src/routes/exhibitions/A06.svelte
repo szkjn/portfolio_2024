@@ -30,14 +30,14 @@
         My contribution to the magazine explores OpenAI GPT-3's creativity (a
         couple of months before the birth of ChatGPT) and reflects about the
         subtle changes and potential ~losses~ as we grow more connected with AI. <a
-          href="">More about the written piece here.</a
+          href="/">More about the written piece here.</a
         >
       </p>
       <br />
       <p>
         For the occasion, I was happy to take part in the exhibition space
         alongside talented visual artists and replugged the wires of this <a
-          href="">two years-old installation initially built in Budapest</a
+          href="/">two years-old installation initially built in Budapest</a
         >
         to approach ~loss~ with a tongue-in-cheek pessimistic vision of nature's
         dying leaves.

@@ -1,0 +1,189 @@
+{
+    "exhibitions": [
+        {
+            "id": "6",
+            "title": "i used to fall every autumn (reprise)",
+            "subtitle": "",
+            "shortDesc": "Tactile interactive installation, audio samples, tablet, playtron device, crocodile cables, leaves, branches and knife.",
+            "location": "90mil, Berlin",
+            "date": "28.10.2023",
+            "coverImg": "/images/i_used_to_2023/01.jpg"
+        },
+        {
+            "id": "5",
+            "title": "knock the wall (down)",
+            "subtitle": "w/ Anastasia Zhylinskaya",
+            "shortDesc": "Omnidirectional geophone, contact microphones, metal rods, modular synthesizer, laptop, mixer, two sets of speakers.",
+            "location": "Flughafen Tempelhof, Berlin",
+            "date": "06.10.2023 > 10.10.2023",
+            "coverImg": "/images/interference_2023/01.jpg"
+        },
+        {
+            "id": "4",
+            "title": "интерference",
+            "subtitle": "w/ Anastasia Zhylinskaya",
+            "shortDesc": "Omnidirectional geophone, contact microphones, metal rods, modular synthesizer, laptop, mixer, two sets of speakers.",
+            "location": "AqTusheti, Tusheti, Georgia",
+            "date": "13.09.2022",
+            "coverImg": "/images/interference/01.jpg"
+        },
+        {
+            "id": "3",
+            "title": "loop me out before i fade and turn to noise",
+            "subtitle": "Neukölln Stories",
+            "shortDesc": "9 tape recorders, looped magnetic tape, digital timers, earrings, hairpins.",
+            "location": "LiTE-HAUS Galerie, Berlin",
+            "date": "06.11 > 28.11.2020",
+            "coverImg": "/images/loop_me_out/01.jpg"
+        },
+        {
+            "id": "2",
+            "title": "i used to fall every autumn",
+            "subtitle": "BARTR",
+            "shortDesc": "Tactile interactive installation, audio samples, tablet, playtron device, crocodile cables, leaves, branches and knife. As part of 2019 BARTR Residency Exhibition in Patyolat, Budapest (5.12—11.12)",
+            "location": "Patyolat Gallery, Budapest",
+            "date": "05.12 > 10.12.2019",
+            "coverImg": "/images/i_used_to/01.jpg"
+        },
+        {
+            "id": "1",
+            "title": "birds chirping in the background",
+            "subtitle": "",
+            "shortDesc": "Immersive sound installation, audio loop (2'02), tablet, 2-track audio mixer, 12 reversed amplified piezo microphones, 22 bike lights and a beach chair.",
+            "location": "Patyolat Gallery, Budapest",
+            "date": "05.12 > 10.12.2019",
+            "coverImg": "/images/birds_chirping/01.jpg"
+        }
+    ],
+    "performances": [
+        {
+            "id": "9",
+            "title": "Fluids",
+            "subtitle": "Flughafen Tempelhof 100th Anniversary",
+            "shortDesc": "A collaboration with Music In Airports' Spatial Soundsystem",
+            "location": "Flughafen Tempelhof, Berlin",
+            "date": "10.10.2023",
+            "coverImg": "/images/fluids_tph/01.jpg"
+        },
+        {
+            "id": "8",
+            "title": "Fluids [Digital Collapse]",
+            "subtitle": "Tanz im August",
+            "shortDesc": "A collaboration with Alvin Collantes exploring emotional upheavals through a close interaction of body movements and sound improvisation.",
+            "location": "Volkspark Rehberge, Berlin",
+            "date": "26.08.2023",
+            "coverImg": "/images/fluids_tia/01.jpg"
+        },
+        {
+            "id": "7",
+            "title": "Fluids",
+            "subtitle": "Bucht der Träumer",
+            "shortDesc": "A collaboration with Alvin Collantes exploring emotional upheavals through a close interaction of body movements and sound improvisation.",
+            "location": "Frankfurt Oder, Germany",
+            "date": "18.08.2023",
+            "coverImg": "/images/fluids_bucht/02.jpg"
+        },
+        {
+            "id": "6",
+            "title": "Fluids",
+            "subtitle": "Hybrida Fest",
+            "shortDesc": "A collaboration with Alvin Collantes exploring emotional upheavals through a close interaction of body movements and sound improvisation.",
+            "location": "Älvsbacka, Sweden",
+            "date": "14.07.2023",
+            "coverImg": "/images/fluids_hybrida/01.png"
+        },
+        {
+            "id": "5",
+            "title": "Fluids [NIGHTMARES]",
+            "subtitle": "House of Beautiful Business",
+            "shortDesc": "A collaboration with Alvin Collantes exploring emotional upheavals through a close interaction of body movements and sound improvisation.",
+            "location": "Sintra, Portugal",
+            "date": "02.06.2023",
+            "coverImg": "/images/fluids_hobb/01.jpg"
+        },
+        {
+            "id": "4",
+            "title": "Fluids",
+            "subtitle": "Magical Hackerism or the Elasticity of Resilience",
+            "shortDesc": "A collaboration with Alvin Collantes exploring emotional upheavals through a close interaction of body movements and sound improvisation.",
+            "location": "SAVVY Contemporary, Berlin",
+            "date": "06.11.2023",
+            "coverImg": "/images/fluids_savvy/01.png"
+        },
+        {
+            "id": "3",
+            "title": "Wild Access Lichtenberg",
+            "subtitle": "by Beatrix Joyce",
+            "shortDesc": "Outdoor performance combining elements of an audio walk and theater performance, incorporating lights, sound, and dance",
+            "location": "Berlin",
+            "date": "14.10.2022",
+            "coverImg": "/images/wild_access/01.jpg"
+        },
+        {
+            "id": "2",
+            "title": "Fluids",
+            "subtitle": "Asian Artists Performing Lab, Amnasia 5",
+            "shortDesc": "A collaboration with Alvin Collantes exploring emotional upheavals through a close interaction of body movements and sound improvisation.",
+            "location": "Berliner Ringtheater, Berlin",
+            "date": "03.10.2023",
+            "coverImg": "/images/fluids_apal/01.png"
+        },
+        {
+            "id": "1",
+            "title": "Fluids (pilot)",
+            "subtitle": "Collective",
+            "shortDesc": "Outdoor pilot performance in collaboration with dancers Annalise Van Even, Sebastian Abarbanell, Amie Blaire and Alvin Collantes.",
+            "location": "Treptower Park, Berlin",
+            "date": "07.08.2020",
+            "coverImg": "/images/fluids_treptower/01.jpg"
+        }
+    ],
+    "releases": [
+        {
+            "id": "4",
+            "title": "Antjemina",
+            "subtitle": "Propagation 2019, Terenor Records",
+            "shortDesc": "",
+            "location": "Berlin",
+            "date": "11.11.2019",
+            "coverImg": "/images/music/03.jpg"
+        },
+        {
+            "id": "3",
+            "title": "Full HD Full Dream",
+            "subtitle": "Lahmacun KKH Support Compilation",
+            "shortDesc": "",
+            "location": "Budapest",
+            "date": "01.01.2024",
+            "coverImg": "/images/music/04.jpg"
+        },
+        {
+            "id": "2",
+            "title": "CSO 384 400",
+            "subtitle": "VA, Exiles Electronics",
+            "shortDesc": "5-track EP released on XVIII Records",
+            "location": "Budapest",
+            "date": "01.01.2024",
+            "coverImg": "/images/music/01.jpg"
+        },
+        {
+            "id": "1",
+            "title": "Apneaphilia",
+            "subtitle": "mjut surroundings 2",
+            "shortDesc": "5-track EP released on XVIII Records",
+            "location": "Leipzig",
+            "date": "01.01.2024",
+            "coverImg": "/images/music/02.jpg"
+        }
+    ],
+    "programming": [
+        {
+            "id": "1",
+            "title": "TBA",
+            "subtitle": "Work in progress...",
+            "shortDesc": "",
+            "location": "Europe",
+            "date": "01.01.2024"
+        }
+    ]
+}

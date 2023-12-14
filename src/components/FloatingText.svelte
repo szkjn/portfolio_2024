@@ -94,7 +94,7 @@
     background: #333;
     padding-left: 1px;
     /* border: 1px solid #ddd; */
-    /* box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 1); */
+    /* box-shadow: 0 2px 5px 0px rgba(255, 255, 255, 1); */
 
     /* text-shadow:
       -2px -1px 0 #0f0,

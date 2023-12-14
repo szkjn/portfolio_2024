@@ -30,7 +30,7 @@
   import Programming from "../components/Programming.svelte";
 
   import type { Data, RouteParams } from "$lib/types";
-  import data from "$lib/private_data.json";
+  import data from "$lib/data.json";
 
   export async function load({ params }: { params: RouteParams }) {
     const { category, id } = params;
