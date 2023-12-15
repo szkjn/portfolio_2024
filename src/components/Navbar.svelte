@@ -4,13 +4,14 @@
 </script>
 
 <nav class="container">
-  <a href="/"><h1 class="">j u n<span class="">s u z u k i</span></h1></a>
+  <a href="/"><h1 class="">jun <span class="">suzuki</span></h1></a>
   <a href="/about" class="about">.- -... --- ..- -</a>
 </nav>
 
 <style>
   span {
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
+    padding-right: 2rem;
   }
   nav {
     display: flex;
